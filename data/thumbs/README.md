@@ -1,0 +1,1 @@
+Thumbnails exist in this directory to aid in locating 404 wallpapers.
