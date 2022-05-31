@@ -32,6 +32,31 @@ commands:
 ---
 
 
+## Configuration
+The configuration file is a simple json file that contains various information about how to choose a wallpaper.
+```json
+{
+    // Only choose aspect ratios that are close to this. e.g. a 16:9 wallpaper will be chosen for a 16:10 or 16:8. TODO: Elaborate how this is chosen
+    "aspectRatios": [],
+    // Only choose wallpapers that are at least this many pixels wide and tall.
+    "sizeLimit": [1920, 1080],
+    // How to apply the wallpaper if it is smaller than the screen.
+    "smallFitment": "[fill|contain|stretch|cover]",
+    // How to apply the wallpaper if it is larger than the screen.
+    "largeFitment": "[fill|contain|stretch|cover]",
+    // Only choose wallpapers that are from these providers.
+    "providers": []
+}
+```
+
+#### Fitment Options TODO: Refine
+| option | description |
+| --- | --- |
+| fill | Fill the screen with the wallpaper. |
+| contain | Fit the wallpaper to the screen. |
+| stretch | Stretch the wallpaper to the screen. |
+| cover | Cover the screen with the wallpaper. |
+
 ## Functionality
 
 The program has the following functionality:
