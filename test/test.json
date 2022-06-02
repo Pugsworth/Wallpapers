@@ -1,0 +1,8 @@
+{
+    "name": "Celestial",
+    "description": "",
+    "data": {
+        "damage": "1d8",
+        "damageType": "radiant"
+    }
+}
