@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A tool to manage my favorite wallpapers.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "mocha --reporter spec"
   },

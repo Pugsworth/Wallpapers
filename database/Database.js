@@ -1,5 +1,5 @@
-import { JsonDB } from "node-json-db";
-import { Config } from "node-json-db/dist/lib/JsonDBConfig";
+import { JsonDB } from 'node-json-db';
+import { Config } from "node-json-db/dist/lib/JsonDBConfig.js";
 
 export class Database
 {
@@ -55,6 +55,7 @@ export class Database
     // @returns None
     set(key, value)
     {
+        this._db.push(key, value);
     }
 
     // @purpose: Remove a value from the database
