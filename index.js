@@ -97,6 +97,7 @@ program
     .description("Manage and download wallpapers from various providers")
     .version("0.0.0")
 
+// Command: download
 program.command("download")
     .description("download one or multiple wallpapers")
     .argument("<provider>", "'all' or provider name")
@@ -111,6 +112,15 @@ program.command("download")
         // throw new Error("Not implemented");
     });
 
+// Command: setwallpaper
+program.command("setwallpaper")
+    .description("Set the wallpaper from a config (or randomly with no config)")
+    .argument("--config [config]", "config file")
+    .action(async(config) => {
+
+    });
+
+// Command: list
 program.command("list")
     .description("list all available providers")
     .action(async () => {
