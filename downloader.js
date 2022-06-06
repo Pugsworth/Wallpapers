@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 import { assert } from "console";
 import { createWriteStream } from "fs";
 
-export class Downloader
+export default class Downloader
 {
     cwd = null;
 
