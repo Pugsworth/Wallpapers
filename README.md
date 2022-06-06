@@ -20,14 +20,15 @@ use ```npm install``` to install dependencies.
 ## Usage
 
 commands:
-| command | description |
-| --- | --- |
-| ```npm start``` | Start the program without arguments. This is equivalant to ```npm run setwallpaper``` |
-| ```npm run download thumbs``` | Download all the thumbnails |
-| ```npm run download wallpapers``` | Download all the wallpapers |
-| ```npm run download metadata``` | Download all the metadata |
-| ```npm run download all``` | Download all the wallpapers and thumbnails |
-| ```npm run setwallpaper [--config <file>]``` | Set the wallpaper based on a configuration file. Without a config file, this picks a random wallpaper from all possible ones. |
+| command                              | description                                                                                                                   |
+|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| ```npm start```                      | Start the program without arguments. This is equivalant to ```npm run setwallpaper```                                         |
+| ```download thumbs|thumbnails```     | Download all the thumbnails                                                                                                   |
+| ```download wallpapers```            | Download all the wallpapers                                                                                                   |
+| ```download metadata```              | Download all the metadata                                                                                                     |
+| ```download all```                   | Download all the wallpapers and thumbnails                                                                                    |
+| ```list```                           | List providers with their quantity of wallpapers                                                                              |
+| ```setwallpaper [--config <file>]``` | Set the wallpaper based on a configuration file. Without a config file, this picks a random wallpaper from all possible ones. |
 
 ---
 
@@ -50,12 +51,12 @@ The configuration file is a simple json file that contains various information a
 ```
 
 #### Fitment Options TODO: Refine
-| option | description |
-| --- | --- |
-| fill | Fill the screen with the wallpaper. |
-| contain | Fit the wallpaper to the screen. |
+| option  | description                          |
+|---------|--------------------------------------|
+| fill    | Fill the screen with the wallpaper.  |
+| contain | Fit the wallpaper to the screen.     |
 | stretch | Stretch the wallpaper to the screen. |
-| cover | Cover the screen with the wallpaper. |
+| cover   | Cover the screen with the wallpaper. |
 
 ## Functionality
 
